@@ -1,0 +1,86 @@
+body{
+    background-image: url('../images/sphinx2.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    max-width: 946px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grid-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: darkblue;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid-content>div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-radius: 15px 25px;
+}
+
+.header {
+    background-image: url('../images/header-logo-ay-1020-120.png');
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    box-shadow: rgb(0, 0, 0) 5px 5px 10px;
+}
+
+.menu {
+    
+    position: relative;
+    height: 100px;
+}
+
+.menu nav {
+    position: absolute;
+    top: 45px;
+    left: 120px;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul>li {
+    float: left;
+    margin: 10px;
+}
+
+.header nav ul>li>a {
+    text-decoration: none;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px,
+    rgb(0, 0, 0) 2px 5px 10px;
+}
+
+.item1 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.item3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
